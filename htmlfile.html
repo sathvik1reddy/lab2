@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>calculator</title>
+
+    <style media="screen">
+    h1 {
+      font-size: 30px;
+
+    }
+h1 {text-align: center;}
+h2 {text-align: center;}
+
+  </style>
+
+
+
+  </head>
+
+
+  <body style="background-image: url(calculator.jpg); background-size: 100%; background-blend-mode: screen;">
+<h1>Lab homework 1</h1>
+    <h2>CALCULATOR</h2>
+    <script src="main.js"></script>
+    <form>
+    <table class="scientific_calculator" >
+      <tr>
+        <td colspan="10"><input id="show" value="0" ></td>
+      </tr>
+      <tr>
+        <td><input type="button"  value="1" onclick="plusc(this.form.show, '1')"></td>
+        <td><input type="button"  value="2" onclick="plusc(this.form.show, '2')"></td>
+        <td><input type="button"  value="3" onclick="plusc(this.form.show, '3')"></td>
+        <td><input type="button"  value="+" onclick="plusc(this.form.show, '+')"></td>
+        <td><input type="button"  value="sin" onclick="if(cn(this.form.show.value)) { sin(this.form) }"></td>
+
+
+      </tr>
+
+      <tr>
+        <td><input type="button"  value="4" onclick="plusc(this.form.show, '4')"></td>
+        <td><input type="button"  value="5" onclick="plusc(this.form.show, '5')"></td>
+        <td><input type="button"  value="6" onclick="plusc(this.form.show, '6')"></td>
+        <td><input type="button"  value="-" onclick="plusc(this.form.show, '-')"></td>
+
+        <td><input type="button"  value="cos" onclick="if(cn(this.form.show.value)) { cos(this.form) }"></td>
+
+</tr>
+      <tr>
+        <td><input type="button"  value="7" onclick="plusc(this.form.show, '7')"></td>
+        <td><input type="button"  value="8" onclick="plusc(this.form.show, '8')"></td>
+        <td><input type="button"  value="9" onclick="plusc(this.form.show, '9')"></td>
+        <td><input type="button"  value="*" onclick="plusc(this.form.show, '*')"></td>
+        <td><input type="button"  value="&radic;" onclick="if(cn(this.form.show.value)) { sqrt(this.form) }"></td>
+
+          </tr>
+      <tr>
+        <td><input type="button"  value="Clear" onclick="this.form.show.value=  0 "></td>
+        <td><input type="button"  value="0" onclick="plusc(this.form.show, '0')"></td>
+
+        <td><input type="button"  value="=" onclick="if(cn(this.form.show.value)) { check(this.form) }"></td>
+        <td><input type="button"  value="/" onclick="plusc(this.form.show, '/')"></td>
+        <td><input type="button" value="x&#94;" onclick="if(cn(this.form.show.value)) { exp(this.form) }"></td>s
+
+      </tr>
+
+    </table>
+   </form>
+  </body>
+</html>
